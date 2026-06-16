@@ -1,0 +1,175 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(125, 146, 165);
+  padding: 10px 20px;
+}
+h1 {
+  color: rgb(13, 13, 14);
+  font-size: 40px;
+  margin: 0;
+}
+
+h2 {
+  color: rgb(3, 121, 121);
+  font-size: 30px;
+  margin: 0;
+}
+.logo{
+height: 80px;
+width: 80px;
+border-radius: 25px;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+.gap {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.nav {
+  display: flex;
+  gap: 10px;
+}
+
+.nav a {
+  text-decoration: none;
+  padding: 10px 18px;
+  border: 1px solid black;
+  border-radius: 25px;
+  color: black;
+  font-size: 18px;
+  transition: 0.3s;
+  background: white;
+}
+a{
+  text-decoration: none;
+  color: black;
+  transition: 0.3s;
+}
+.nav a:hover {
+  background-color: black;
+  color: white;
+}
+a:hover{
+  color: wheat;
+}
+.tag{
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  
+ 
+}
+.ph-logo{
+height: 20px;
+width: 20px;
+margin-left: 20px;
+margin-right: 5px;
+}
+.login{
+  display: flex;
+  padding: 50px;
+  margin-top: 90px;
+  margin-bottom: 175px;
+  margin-left: 400px;
+  margin-right: 400px;
+  border: solid black 5px;
+  border-radius: 15px;
+  background-color: rgb(186, 187, 187);
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  object-fit: cover;
+}
+.submit{
+  font-size: 15px;
+  margin-top:10px;
+  flex-direction: column;
+  text-decoration: none;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.admin-logo {
+  width: 35px;
+  height: 35px;
+  border-radius: 75%;
+  padding-left: 10px;
+}
+.user {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.hero{
+      height:90vh;
+      background:url("https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?q=80&w=1400&auto=format&fit=crop") center/cover;
+      display:flex;
+      justify-content:right;
+      align-items:right;
+  
+}
+.hero-box{
+  padding: 10px;
+  margin-top: 125px;
+
+}
+h4{
+  font-size: 55px;
+  color: rgb(238, 236, 236);
+  margin: 0;
+  padding: 0;
+   text-shadow: 0 0 10px rgb(22, 22, 22),
+                0 0 20px rgb(25, 26, 26),
+                0 0 40px rgb(15, 15, 15);
+  text-align: end;
+}
+h5{
+  font-size: 45px;
+  color: rgb(17, 3, 51);
+  margin: 0;
+  padding: 0;
+  text-align: end;
+  font-style: bold;
+   text-shadow: 0 0 10px rgb(22, 22, 22),
+                0 0 20px rgb(25, 26, 26),
+                0 0 40px rgb(15, 15, 15);
+
+
+}
+.hero p{ 
+  font-size: 30px;
+  font-style: bold;
+  font-style: italic;
+   color: rgb(242, 245, 245);
+  margin: 0;
+  padding: 0;
+}
+button{
+  text-align:end;
+  border: 1px solid black;
+  font-size: 20px;
+  display:block;
+  margin:20px auto;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  align-items: right;
+  background-color: rgb(4, 94, 94);
+  color: white;
+  padding: 5px 25px;
+  border-radius: 10px;
+ transition: 2s;
+}
+button:hover{
+  background-color: red;
+}
+
+

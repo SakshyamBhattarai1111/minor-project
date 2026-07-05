@@ -3,44 +3,242 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sajilo Bus</title>
+    <title>Sajilo Bus Ticket Booking System</title>
+
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"> </script>
+    <script src="script.js"></script>
+    
 </head>
+
 <body>
-    <div class="header">
+
+<header class="header">
+
+    <div class="logo-section">
+        <img src="bus3.jpg" class="logo" alt="Logo">
+
+        <div class="title">
+            <h1>Sajilo Bus</h1>
+            <p>Travel Smart ! Travel Safe</p>
+        </div>
+    </div>
+
+
+
+<nav class="navbar">
+    <a href="main.html" class="active">Home</a>
+    <a href="about.html">About</a>
+    <a href="routes.html">Routes</a>
+    <a href="booking.html">Book Ticket</a>
+    <a href="mybooking.html">My Booking</a>
+    <a href="contact.html">Contact</a>
+    <a href="login.html" class="login-btn">Login</a>
+</nav>
+</header>
+<section class="hero">
+
+    <video autoplay muted loop playsinline>
+        <source src="bus.mp4" type="video/mp4">
+    </video>
+
+    <div class="overlay"></div>
+
+    <div class="hero-content">
+
+        <div class="hero-text">
+
+            <h3>Welcome To</h3>
+
+            <h1>Sajilo Bus</h1>
+
+            <h2>Book Your Ticket Easily & Safely</h2>
+
+            <p>
+                Experience comfortable and secure bus travel across Nepal.
+                Book your tickets online in just a few clicks and enjoy a
+                hassle-free journey.
+            </p>
+
+            <button onclick="bookTicket()">Book Now</button>
+
+        </div>
+
+        <div class="login-box">
+
+            <h2>User Login</h2>
+
+           <form onsubmit="return login();">
+
+    <input type="text" id="username" placeholder="Username">
+
+    <input type="password" id="password" placeholder="Password">
+
+    <button type="submit">Login</button>
+
+</form>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="services">
+
+    <h2>Our Services</h2>
+
+    <div class="service-container">
+
+        <div class="card">
+       
+            <h3>Online Booking</h3>
+            <p>Book bus tickets anytime from anywhere.</p>
+        </div>
+
+        <div class="card">
+          
+            <h3>Seat Selection</h3>
+            <p>Select your preferred seat before booking.</p>
+        </div>
+
+        <div class="card">
         
-        <img src="logo.png" class="logo" alt="bus logo" title="bus logo">
-<div class="text">
-        <h1>Sajilo</h1>
-        <h2>Bus</h2>
-    </div>
-    <div class="tag">
-    <img src="phone-call.png" class="ph-logo"><h3>01-267023</h3>
-    <img src="phone-call.png" class="ph-logo"> <h3>01-268493</h3>
-    <img src="email.png" class="ph-logo">
-    <a href="mailto:sajilobus@gmail.com">sajilobus@gmail.com</a>
-    </div>
-    <div class="nav">
+            <h3>Bus Routes</h3>
+            <p>Travel to major cities across Nepal.</p>
+        </div>
 
-  <a href="user.html">Home</a>
-  <a href="route.html" target="_blank">Route</a>
-  <a href="booking.html" target="_blank">Booking</a>
-  <a href="support.html" target="_blank">Support</a>
-</div>
+        <div class="card">
+            
+            <h3>On Time Service</h3>
+            <p>Reliable departures and arrivals.</p>
+        </div>
 
-<div class="user">
-  <img src="admin logo.avif" class="admin-logo">
-  <h3>User</h3>
-</div>
-</div>
-</div>
-<div class="hero">
-    <div class="hero-box">
-        <h4>Welcome to </h4>
-        <h5>Sajilo bus</h5>
-        <p>Book Your Ticket Easily & Safely</p>
-        <button onclick="booking()"> Book now </button>
-</div> 
-</div>
+        <div class="card">
+          
+            <h3>Easy Payment</h3>
+            <p>Simple and secure payment options.</p>
+        </div>
+
+        <div class="card">
+        
+            <h3>24/7 Support</h3>
+            <p>Customer support whenever you need help.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="about">
+
+    <h2>Why Choose Sajilo Bus?</h2>
+
+    <p>
+        Sajilo Bus is a modern online bus ticket booking platform that
+        provides a fast, secure and convenient way to reserve seats.
+        Our goal is to make travelling across Nepal easier, safer and
+        more comfortable for everyone.
+    </p>
+
+</section>
+
+<section class="stats">
+
+    <div class="stat">
+        <h1>100+</h1>
+        <p>Daily Trips</p>
+    </div>
+
+    <div class="stat">
+        <h1>50+</h1>
+        <p>Routes</p>
+    </div>
+
+    <div class="stat">
+        <h1>5000+</h1>
+        <p>Happy Customers</p>
+    </div>
+
+    <div class="stat">
+        <h1>24/7</h1>
+        <p>Support</p>
+    </div>
+
+</section>
+
+<section class="cta">
+
+    <h2>Ready For Your Next Journey?</h2>
+
+    <p>
+        Book your ticket today and travel with comfort, safety and
+        affordable prices.
+    </p>
+
+    <button id="bookNow">Book Ticket</button>
+
+</section>
+
+<footer>
+
+    <div class="footer-container">
+
+        <div>
+
+            <h3>Sajilo Bus</h3>
+
+            <p>Your Journey, Our Priority.</p>
+
+        </div>
+
+        <div>
+
+            <h3>Quick Links</h3>
+
+            <p><a href="main.html">Home</a></p>
+
+            <p><a href="booking.html">Book Ticket</a></p>
+
+            <p><a href="routes.html">Routes</a></p>
+
+            <p><a href="contact.html">Contact</a></p>
+
+        </div>
+
+        <div>
+
+            <h3>Contact</h3>
+
+            <p> +977-01-267023</p>
+
+            <p> sajilobus@gmail.com</p>
+
+            <p> Kathmandu, Nepal</p>
+
+        </div>
+
+        <div>
+
+            <h3>Follow Us</h3>
+
+            <p> Facebook</p>
+
+            <p> Instagram</p>
+
+            <p> YouTube</p>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <p class="copyright">
+        © 2026 Sajilo Bus Ticket Booking System. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+
+</body>
 </html>

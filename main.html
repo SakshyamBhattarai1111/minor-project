@@ -46,24 +46,39 @@
     <div class="hero-content">
 
         <div class="hero-text">
+<form onsubmit="return search1();">
+    <div class="login-box">
+        <div class="field">
+       <label for="date"><h2>Date</h2></label>
+    <input type="date" id="date" placeholder="Date"></div>
+    <div class="route-row">
+    <div class="field">
+        <label for="from"><h2>From</h2></label>
+        <select id="from">
+            <option value="" disabled selected>Select City</option>
+            <option>Kathmandu</option>
+            <option>Pokhara</option>
+            <option>Bharatpur</option>
+        </select>
+    </div>
 
-            <h3>Welcome To</h3>
+    <div class="field">
+        <label for="to"><h2>To</h2></label>
+        <select id="to">
+            <option value="" disabled selected>Select City</option>
+            <option>Kathmandu</option>
+            <option>Pokhara</option>
+            <option>Bharatpur</option>
+        </select>
+    </div>
+    </div>
+    
 
-            <h1>Sajilo Bus</h1>
-
-            <h2>Book Your Ticket Easily & Safely</h2>
-
-            <p>
-                Experience comfortable and secure bus travel across Nepal.
-                Book your tickets online in just a few clicks and enjoy a
-                hassle-free journey.
-            </p>
-
-            <button onclick="bookTicket()">Book Now</button>
-
+<button type="submit">Search</button>
+</form>
+</div>
         </div>
-
-        <div class="login-box">
+        <div class="login-1box">
 
             <h2>User Login</h2>
 

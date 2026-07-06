@@ -26,13 +26,13 @@
 
 
 <nav class="navbar">
-    <a href="main.html" class="active">Home</a>
+    <a href="main.html" >Home</a>
     <a href="about.html">About</a>
     <a href="routes.html">Routes</a>
     <a href="booking.html">Book Ticket</a>
     <a href="mybooking.html">My Booking</a>
     <a href="contact.html">Contact</a>
-    <a href="login.html" class="login-btn">Login</a>
+   <a href="user.html" class="active">User</a>
 </nav>
 </header>
 <section class="hero">
@@ -64,17 +64,32 @@
         </div>
 
         <div class="login-box">
+           <form onsubmit="return search();">
 
-            <h2>User Login</h2>
+    <input type="date" id="date" placeholder="Date">
+    <div class="route-row">
+    <div class="field">
+        <label for="from"><h2>From</h2></label>
+        <select id="from">
+            <option value="" disabled selected>Select City</option>
+            <option>Kathmandu</option>
+            <option>Pokhara</option>
+            <option>Bharatpur</option>
+        </select>
+    </div>
 
-           <form onsubmit="return login();">
+    <div class="field">
+        <label for="to"><h2>To</h2></label>
+        <select id="to">
+            <option value="" disabled selected>Select City</option>
+            <option>Kathmandu</option>
+            <option>Pokhara</option>
+            <option>Bharatpur</option>
+        </select>
+    </div>
+</div>
 
-    <input type="text" id="username" placeholder="Username">
-
-    <input type="password" id="password" placeholder="Password">
-
-    <button type="submit">Login</button>
-
+<button type="submit">Search</button>
 </form>
         </div>
 

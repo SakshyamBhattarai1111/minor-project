@@ -212,13 +212,15 @@ body{
     text-decoration:none;
     font-weight:bold;
 }
+
 .login-1box{
     width:350px;
-    background:rgba(255,255,255,.95);
+    background:rgba(165, 164, 164, 0.95);
     padding:32px;
     border-radius:15px;
     box-shadow:0 5px 20px rgba(0,0,0,.3);
     height:300px;
+    align-items:center;
 }
 .login-1box h2{
     text-align:center;

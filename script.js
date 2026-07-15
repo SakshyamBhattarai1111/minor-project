@@ -41,3 +41,22 @@ if(date=="" || from=="" || to==""){
 function search1(){
 alert("Please login first to search for routes");
 }
+function signUp() {
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+    var confirmPassword = document.getElementById("confirmPassword").value;
+
+    if (username == "" || password == "" || confirmPassword == "") {
+        alert("Please fill all the fields.");
+        return false;
+    }
+
+    if (password != confirmPassword) {
+        alert("Passwords do not match.");
+        return false;
+    }
+
+    alert("Sign Up Successful");
+    window.location = "login.html";
+    return false;
+}

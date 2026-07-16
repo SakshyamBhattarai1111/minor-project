@@ -9,6 +9,87 @@ body{
     background:#f5f8fc;
     color:#333;
 }
+@media screen and (max-width: 992px){
+
+    .container{
+        width:90%;
+    }
+
+    .cards{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .hero img{
+        width:45%;
+    }
+}
+@media screen and (max-width: 768px) {
+
+    header{
+        flex-direction: column;
+    }
+
+    nav ul{
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+
+    .hero{
+        flex-direction:column;
+    }
+
+    .cards{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+@media screen and (max-width: 576px) {
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .container{
+        width:95%;
+    }
+
+    header{
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    nav{
+        margin-top:15px;
+    }
+
+    nav ul{
+        flex-direction: column;
+        gap:10px;
+    }
+
+    .hero{
+        flex-direction: column;
+        text-align:center;
+    }
+
+    .hero img{
+        width:100%;
+        height:auto;
+    }
+
+    .hero-content{
+        width:100%;
+        padding:20px;
+    }
+
+    .cards{
+        grid-template-columns:1fr;
+    }
+
+    .footer{
+        text-align:center;
+    }
+}
 
 .header{
     color:white;
@@ -83,9 +164,11 @@ body{
 }
 
 .hero{
-    position:relative;
-    min-height:90vh;
-    overflow:hidden;
+    height:100vh;
+    display:flex;
+    justify-content:flex-end;  
+    align-items:center;        
+    padding:0 60px;            
 }
 
 .hero video{
@@ -116,7 +199,7 @@ body{
     min-height:90vh;
 }
 .hero-text button{
-    padding:15px 40px;
+    padding:15px 20px;
     border:none;
     border-radius:30px;
     background:#ff9800;
@@ -131,26 +214,24 @@ body{
 }
 
 .login-box{
-    width: auto;
-    background:rgba(26, 44, 61, 0.95);
-    padding:20px;
+   width:350px;
+    background:rgba(131, 130, 130, 0.95);
+    padding:32px;
     border-radius:15px;
     box-shadow:0 5px 20px rgba(0,0,0,.3);
-    height: auto;
-    display: flex;
-    margin-bottom: 250px;
-    flex-direction: row;
-    align-items: center;
+    height:300px;
+    align-items:center;
+    margin-bottom: 100px;
 
 }
 .login-box h2{
     text-align:center;
-    margin-bottom:0px;
-    color:#dbe0e0;
+    color:#0d0e0e;
     font-size:20px;
+    margin-top:10px;
 }
 #date {
-    width: auto;
+    width: 300px;
     height: 50px;
     padding: 15px;
     font-size: 16px;
@@ -162,7 +243,8 @@ body{
 
 .route-row {
     display: flex;
-    gap: 20px;          
+    gap: 20px;  
+    align-items: center;        
 }
 
 .field {
@@ -186,7 +268,7 @@ body{
 }
 
 .login-box button{
-    width: 100px;
+    width: 290px;
     height: 50px;
     padding:12px;
     border:none;
@@ -195,8 +277,7 @@ body{
     color:white;
     font-size:17px;
     cursor:pointer;
-    margin-top: 32px;
-    margin-left: 20px;
+    margin-top: 20px;
 }
 
 .login-box button:hover{
@@ -214,13 +295,20 @@ body{
 }
 
 .login-1box{
-    width:350px;
-    background:rgba(165, 164, 164, 0.95);
+   width:350px;
+    background:rgba(131, 130, 130, 0.95);
     padding:32px;
     border-radius:15px;
     box-shadow:0 5px 20px rgba(0,0,0,.3);
     height:300px;
     align-items:center;
+    margin-bottom: 100px;
+}
+#signup-link{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    font-size:15px;
 }
 .signup-box{
      width:350px;

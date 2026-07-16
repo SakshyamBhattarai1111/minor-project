@@ -32,7 +32,7 @@
     <a href="booking.html">Book Ticket</a>
     <a href="mybooking.html">My Booking</a>
     <a href="contact.html">Contact</a>
-    <a href="login.html" class="login-btn">Login</a>
+  
 </nav>
 </header>
 <section class="hero">
@@ -41,41 +41,29 @@
         <source src="bus.mp4" type="video/mp4">
     </video>
 
-    <div class="overlay"></div>
+    <div class="overlay">
 
-    <div class="hero-content">
+    <div class="hero-content ">
 
-        <div class="hero-text">
-<form onsubmit="return search1();">
-    <div class="login-box">
-        <div class="field">
-       <label for="date"><h2>Date</h2></label>
-    <input type="date" id="date" placeholder="Date"></div>
-    <div class="route-row">
-    <div class="field">
-        <label for="from"><h2>From</h2></label>
-        <select id="from">
-            <option value="" disabled selected>Select City</option>
-            <option>Kathmandu</option>
-            <option>Pokhara</option>
-            <option>Bharatpur</option>
-        </select>
-    </div>
-
-    <div class="field">
-        <label for="to"><h2>To</h2></label>
-        <select id="to">
-            <option value="" disabled selected>Select City</option>
-            <option>Kathmandu</option>
-            <option>Pokhara</option>
-            <option>Bharatpur</option>
-        </select>
-    </div>
-    </div>
+        <div class="hero-text" >
     
+        <div class="signup-box">
 
-<button type="submit">Search</button>
+            <h2>Sign Up</h2>
 
+           <form onsubmit="return signUp();">
+
+    <input type="text" id="username" placeholder="Username">
+
+    <input type="password" id="password" placeholder="Password">
+    <input type="password" id="confirmPassword" placeholder="Confirm Password">
+
+    <button type="submit">Sign Up</button>
+
+</form>
+        </div>
+
+    </div>
 
 </section>
 

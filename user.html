@@ -33,6 +33,7 @@
     <a href="mybooking.html">My Booking</a>
     <a href="contact.html">Contact</a>
    <a href="user.html" class="active">User</a>
+   <button id="theme-btn" onclick="toggleTheme()">🌙</button>
 </nav>
 </header>
 <section class="hero">
@@ -41,15 +42,14 @@
         <source src="bus.mp4" type="video/mp4">
     </video>
 
-    <div class="overlay"></div>
 
     <div class="hero-content">
 
         <div class="hero-text">
 
-        <div class="login-1box">
+        <div class="login-box">
            <form onsubmit="return search();">
-
+<label for="Date"><h2>Date</h2></label>
     <input type="date" id="date" placeholder="Date">
     <div class="route-row">
     <div class="field">

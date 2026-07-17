@@ -303,6 +303,13 @@ body{
     height:300px;
     align-items:center;
     margin-bottom: 100px;
+    
+}
+.login-1box h3{
+    text-align:center;
+    color:#0d0e0e;
+    font-size:15px;
+    margin-top:10px;
 }
 #signup-link{
     color:white;
@@ -345,7 +352,7 @@ body{
     border-radius:8px;
     font-size:16px;
 }
-.sinup-box button{
+.signup-box button{
     width:100%;
     padding:12px;
     border:none;
@@ -355,6 +362,7 @@ body{
     font-size:17px;
     cursor:pointer;
     margin-top:10px;
+
 }
 .login-1box button{
     width:100%;
@@ -655,4 +663,53 @@ footer{
     padding:40px 20px;
 }
 
+}
+#theme-btn{
+    width: 25px;
+    height:25px;
+    border:none;
+    border-radius:50%;
+    background:#ebeae8;
+    color:#fff;
+    font-size:20px;
+    cursor:pointer;
+    margin-left:15px;
+    transition:.3s;
+}
+
+#theme-btn:hover{
+    background:#131312;
+    transform:rotate(180deg);
+}
+
+
+body.dark{
+    background:#121212;
+    color:#fff;
+}
+
+body.dark .services,
+body.dark .about,
+body.dark .cta{
+    background:#121212;
+    color:#fff;
+}
+
+body.dark .card{
+    background:#1e1e1e;
+    color:#fff;
+}
+
+body.dark .card p,
+body.dark .about p,
+body.dark .cta p{
+    color:#ddd;
+}
+
+body.dark footer{
+    background:#000814;
+}
+
+body.dark .header{
+    background:linear-gradient(90deg,#000814,#001d3d,#003566);
 }

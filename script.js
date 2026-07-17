@@ -60,3 +60,14 @@ function signUp() {
     window.location = "login.html";
     return false;
 }
+function toggleTheme() {
+    document.body.classList.toggle("dark");
+
+    const btn = document.getElementById("theme-btn");
+
+    if (document.body.classList.contains("dark")) {
+        btn.innerHTML = "☀️";
+    } else {
+        btn.innerHTML = "🌙";
+    }
+}

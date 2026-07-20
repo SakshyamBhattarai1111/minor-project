@@ -713,3 +713,9 @@ body.dark footer{
 body.dark .header{
     background:linear-gradient(90deg,#000814,#001d3d,#003566);
 }
+section {
+    scroll-margin-top: 90px; /* Adjust to your navbar height */
+}
+html {
+    scroll-behavior: smooth;
+}

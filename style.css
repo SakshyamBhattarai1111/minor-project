@@ -714,8 +714,174 @@ body.dark .header{
     background:linear-gradient(90deg,#000814,#001d3d,#003566);
 }
 section {
-    scroll-margin-top: 90px; /* Adjust to your navbar height */
+    scroll-margin-top: 90px; 
 }
 html {
     scroll-behavior: smooth;
+}
+
+.route-section{
+    width:90%;
+    margin:40px auto;
+}
+
+.route-title{
+    text-align:center;
+    color:#0b4d8b;
+    font-size:36px;
+    margin-bottom:10px;
+}
+
+.route-subtitle{
+    text-align:center;
+    color:#666;
+    margin-bottom:35px;
+}
+.route-search{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+    background:#fff;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 8px 25px rgba(0,0,0,.12);
+    margin-bottom:40px;
+    flex-wrap:wrap;
+}
+
+.route-search label{
+    font-weight:bold;
+    color:#0b4d8b;
+}
+
+.route-search input,
+.route-search select{
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+    min-width:180px;
+}
+
+.route-search button{
+    background:#ff9800;
+    color:#fff;
+    border:none;
+    padding:12px 35px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+    transition:.3s;
+}
+
+.route-search button:hover{
+    background:#e68900;
+}
+.route-card{
+    background:#fff;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,.12);
+    padding:25px;
+    margin-bottom:25px;
+    transition:.3s;
+}
+
+.route-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 12px 30px rgba(0,0,0,.18);
+}
+
+.route-info{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.route-city{
+    font-size:24px;
+    color:#0b4d8b;
+    font-weight:bold;
+}
+
+.route-arrow{
+    color:#ff9800;
+    margin:0 10px;
+}
+
+.route-detail{
+    text-align:center;
+}
+
+.route-detail h4{
+    color:#777;
+    font-size:14px;
+    margin-bottom:5px;
+}
+
+.route-detail p{
+    font-size:18px;
+    font-weight:bold;
+    color:#333;
+}
+
+.route-price{
+    color:#28a745;
+    font-size:28px;
+    font-weight:bold;
+}
+.route-info{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:25px;
+}
+
+.route-city{
+    flex:2.5;
+}
+
+.route-detail{
+    flex:1;
+    text-align:center;
+}
+
+.route-right{
+    display:flex;
+    align-items:center;
+    gap:25px;
+    margin-left:auto;
+}
+
+.route-price{
+    font-size:32px;
+    font-weight:bold;
+    color:#28a745;
+    white-space:nowrap;
+}
+
+.book-btn{
+    width:150px;
+    height:50px;
+}
+.book-btn{
+    margin-left: 20px;
+    width: 140px;
+}
+
+.book-btn{
+    background:#ff9800;
+    color:#fff;
+    padding:14px 30px;
+    border:none;
+    border-radius:8px;
+    font-size:17px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.book-btn:hover{
+    background:#0b4d8b;
 }

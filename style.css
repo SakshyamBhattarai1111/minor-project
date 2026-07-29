@@ -885,3 +885,151 @@ html {
 .book-btn:hover{
     background:#0b4d8b;
 }
+
+.booking78{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:60px 20px;
+    background:linear-gradient(135deg,#2b3947,#b1b5b9);
+}
+
+.booking78-box{
+    width:500px;
+    background:#fff;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+
+.booking78-box h2{
+    text-align:center;
+    color:#0b4f8a;
+    margin-bottom:30px;
+}
+
+.booking78-group{
+    margin-bottom:18px;
+}
+
+.booking78-group label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:bold;
+}
+
+.booking78-group input,
+.booking78-group select{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+}
+
+.booking78-group input:focus,
+.booking78-group select:focus{
+    outline:none;
+    border-color:#0b4f8a;
+}
+
+.booking78-row{
+    display:flex;
+    gap:15px;
+}
+
+.booking78-row .booking78-group{
+    flex:1;
+}
+
+.booking78-btn{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:8px;
+    background:#ff9800;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.booking78-btn:hover{
+    background:#ff7b00;
+}
+
+.booking78-back{
+    display:block;
+    text-align:center;
+    margin-top:20px;
+    text-decoration:none;
+    color:#0b4f8a;
+    font-weight:bold;
+}
+
+.booking78-back:hover{
+    color:#ff9800;
+}
+
+
+.confirm99{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#eef6ff,#d9ecff);
+    padding:40px 20px;
+}
+
+.confirm99-box{
+    width:450px;
+    background:#ffffff;
+    border-radius:20px;
+    padding:40px 30px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+.confirm99-icon{
+    width:90px;
+    height:90px;
+    margin:0 auto 20px;
+    border-radius:50%;
+    background:#28a745;
+    color:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:45px;
+    font-weight:bold;
+}
+
+.confirm99-box h1{
+    color:#28a745;
+    font-size:34px;
+    margin-bottom:15px;
+}
+
+.confirm99-box p{
+    font-size:18px;
+    color:#555;
+    line-height:1.7;
+    margin-bottom:30px;
+}
+
+.confirm99-btn{
+    display:inline-block;
+    text-decoration:none;
+    background:#ff9800;
+    color:#fff;
+    padding:14px 35px;
+    border-radius:8px;
+    font-size:18px;
+    transition:.3s;
+}
+
+.confirm99-btn:hover{
+    background:#ff7b00;
+    transform:translateY(-3px);
+}

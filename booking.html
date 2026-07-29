@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sajilo Bus Ticket Booking System</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="logo-section">
+        <img src="bus3.jpg" class="logo" alt="Logo">
+
+        <div class="title">
+            <h1>Sajilo Bus</h1>
+            <p>Travel Smart ! Travel Safe</p>
+        </div>
+    </div>
+
+
+
+<nav class="navbar">
+    <a href="main.html" class="active">Home</a>
+    <a href="main.html">About</a>
+    <a href="routes.html">Routes</a>
+    <a href="booking.html">Book Ticket</a>
+    <a href="main.html">Contact</a>
+    </nav>
+    </header>
+
+    <body>
+        
+
+<div class="booking78">
+
+    <div class="booking78-box">
+
+        <h2> Book Your Ticket</h2>
+
+       <form onsubmit="return booking78()">
+
+            <div class="booking78-group">
+                <label>Full Name</label>
+                <input type="text" placeholder="Enter your name" id="name">
+            </div>
+
+            <div class="booking78-row">
+
+                <div class="booking78-group">
+                    <label>From</label>
+                    <select>
+                        <option>Kathmandu</option>
+                        <option>Pokhara</option>
+                        <option>Chitwan</option>
+                        <option>Butwal</option>
+                    </select>
+                </div>
+
+                <div class="booking78-group">
+                    <label>To</label>
+                    <select>
+                        <option>Pokhara</option>
+                        <option>Kathmandu</option>
+                        <option>Chitwan</option>
+                        <option>Butwal</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <div class="booking78-row">
+
+                <div class="booking78-group">
+                    <label>Travel Date</label>
+                    <input type="date">
+                </div>
+
+                <div class="booking78-group">
+                    <label>Passengers</label>
+                    <input type="number" value="1" min="1">
+                </div>
+
+            </div>
+
+            <div class="booking78-group">
+                <label>Phone Number</label>
+                <input type="tel" placeholder="98XXXXXXXX" id="phone">
+            </div>
+
+            <button class="booking78-btn">
+                Confirm Booking
+            </button>
+
+            <a href="main.html" class="booking78-back">
+                ← Back to Home
+            </a>
+
+        </form>
+
+    </div>
+
+</div>
+</body>
+</html>

@@ -71,3 +71,19 @@ function toggleTheme() {
         btn.innerHTML = "🌙";
     }
 }
+function bookticket(){
+    window.location = "booking.html";
+}
+function booking78(){
+    var name = document.getElementById("name").value;
+    var phone = document.getElementById("phone").value;
+    if(name=="" || phone==""){
+        alert("Please fill all the fields");
+        return false;
+    }
+    else {
+        alert("Booking Confirmed!");
+        window.location = "confirmation.html";
+        return false;
+    }
+}

@@ -9,87 +9,6 @@ body{
     background:#f5f8fc;
     color:#333;
 }
-@media screen and (max-width: 992px){
-
-    .container{
-        width:90%;
-    }
-
-    .cards{
-        grid-template-columns:repeat(2,1fr);
-    }
-
-    .hero img{
-        width:45%;
-    }
-}
-@media screen and (max-width: 768px) {
-
-    header{
-        flex-direction: column;
-    }
-
-    nav ul{
-        justify-content:center;
-        flex-wrap:wrap;
-    }
-
-    .hero{
-        flex-direction:column;
-    }
-
-    .cards{
-        grid-template-columns:repeat(2,1fr);
-    }
-}
-@media screen and (max-width: 576px) {
-
-    body{
-        overflow-x: hidden;
-    }
-
-    .container{
-        width:95%;
-    }
-
-    header{
-        flex-direction: column;
-        text-align: center;
-        padding: 15px;
-    }
-
-    nav{
-        margin-top:15px;
-    }
-
-    nav ul{
-        flex-direction: column;
-        gap:10px;
-    }
-
-    .hero{
-        flex-direction: column;
-        text-align:center;
-    }
-
-    .hero img{
-        width:100%;
-        height:auto;
-    }
-
-    .hero-content{
-        width:100%;
-        padding:20px;
-    }
-
-    .cards{
-        grid-template-columns:1fr;
-    }
-
-    .footer{
-        text-align:center;
-    }
-}
 
 .header{
     color:white;
@@ -213,16 +132,276 @@ body{
     background:#ff5722;
 }
 
-.login-box{
-   width:350px;
-    background:rgba(131, 130, 130, 0.95);
-    padding:32px;
-    border-radius:15px;
-    box-shadow:0 5px 20px rgba(0,0,0,.3);
-    height:300px;
-    align-items:center;
-    margin-bottom: 100px;
+.login-box {
+    width: 90%;
+    max-width: 390px;
+    min-height:300px;
+    height:auto;
+    background: rgba(131, 130, 130, 0.95);
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    margin: 0 auto 100px;
+}
 
+
+.route-row{
+    display: flex;
+    gap: 15px;
+}
+
+.route-row .field{
+    flex: 1;
+}
+@media (max-width: 768px){
+
+    .header{
+        flex-direction: column;
+        padding: 15px;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .logo-section{
+        justify-content: center;
+    }
+
+    .title h1{
+        font-size: 28px;
+    }
+
+    .title p{
+        font-size: 14px;
+    }
+
+    .navbar{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        position: static;
+        padding: 10px;
+    }
+
+    .navbar a{
+        width: 45%;
+        text-align: center;
+        padding: 12px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px){
+
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar a{
+        width: 100%;
+        max-width: 300px;
+    }
+}
+@media (max-width:992px){
+
+    .header{
+        padding:15px 20px;
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .navbar{
+        flex-wrap:wrap;
+        gap:10px;
+    }
+
+    .hero{
+        height:auto;
+        padding:120px 20px 40px;
+        justify-content:center;
+    }
+
+    .hero-content{
+        flex-direction:column;
+        text-align:center;
+        padding:20px;
+        min-height:auto;
+    }
+
+    .login-box,
+    .login-1box,
+    .signup-box,
+    .booking78-box,
+    .confirm99-box{
+        width:90%;
+        max-width:450px;
+        height:auto;
+    }
+
+    #date,
+    .login-box button{
+        width:100%;
+        margin-right:0;
+    }
+
+    .route-info{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .route-right{
+        margin-left:0;
+        flex-direction:column;
+        gap:15px;
+    }
+}
+
+
+@media (max-width:768px){
+
+    .header{
+        padding:15px;
+    }
+
+    .logo{
+        width:60px;
+        height:60px;
+    }
+
+    .title h1{
+        font-size:28px;
+    }
+
+    .navbar{
+        flex-direction:column;
+    }
+
+    .navbar a{
+        width:100%;
+        text-align:center;
+    }
+
+    .hero{
+        padding:110px 15px 30px;
+    }
+
+    .hero-content{
+        padding:10px;
+    }
+
+    .route-row,
+    .booking78-row{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    .field{
+        width:100%;
+    }
+
+    #date,
+    .field select,
+    .field input,
+    .login-box button{
+        width:100%;
+    }
+
+    .services,
+    .about,
+    .stats{
+        padding:40px 15px;
+    }
+
+    .card{
+        width:100%;
+    }
+
+    .footer-container{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .book-btn{
+        width:100%;
+        margin-left:0;
+    }
+}
+
+
+@media (max-width:480px){
+
+    .hero-text h1{
+        font-size:34px;
+    }
+
+    .hero-text h2{
+        font-size:20px;
+    }
+
+    .hero-text p{
+        font-size:16px;
+    }
+
+    .login-box,
+    .login-1box,
+    .signup-box,
+    .booking78-box,
+    .confirm99-box{
+        padding:20px;
+    }
+
+    .route-city{
+        font-size:20px;
+    }
+
+    .route-price{
+        font-size:26px;
+    }
+}
+
+.menu-toggle{
+    display:none;
+    font-size:32px;
+    color:white;
+    cursor:pointer;
+}
+
+
+@media (max-width:768px){
+
+    .header{
+        flex-direction:row;
+        justify-content:space-between;
+        align-items:center;
+        padding:15px 20px;
+    }
+
+    .menu-toggle{
+        display:block;
+    }
+
+    .navbar{
+        display:none;
+        position:absolute;
+        top:100%;
+        left:0;
+        width:100%;
+        background:#0b1f3a;
+        flex-direction:column;
+        padding:15px 0;
+    }
+
+    .navbar a{
+        width:100%;
+        text-align:center;
+        padding:15px;
+    }
+
+    .navbar.active{
+        display:flex;
+    }
 }
 .login-box h2{
     text-align:center;
@@ -231,7 +410,9 @@ body{
     margin-top:10px;
 }
 #date {
-    width: 300px;
+    width: auto;
+    min-width: 260px;
+    max-width: 360px;
     height: 50px;
     padding: 15px;
     font-size: 16px;
@@ -268,7 +449,7 @@ body{
 }
 
 .login-box button{
-    width: 290px;
+    width: 250px;
     height: 50px;
     padding:12px;
     border:none;
@@ -305,17 +486,33 @@ body{
     margin-bottom: 100px;
     
 }
+.login-box h3{
+    text-align:center;
+    color:#0d0e0e;
+    font-size:15px;
+    margin-top:10px;
+}
 .login-1box h3{
     text-align:center;
     color:#0d0e0e;
     font-size:15px;
     margin-top:10px;
 }
-#signup-link{
-    color:white;
+.signup-link{
+    margin-top:15px;
+    text-align:center;
+    font-size:16px;
+    color:#1d1d1d;
+}
+
+.signup-link a{
+    color:#007bff;
     text-decoration:none;
     font-weight:bold;
-    font-size:15px;
+}
+
+.signup-link a:hover{
+    text-decoration:underline;
 }
 .signup-box{
      width:350px;
@@ -561,7 +758,9 @@ footer hr{
 }
 
 @media(max-width:992px){
-
+#h3{
+    font-size:10px;
+}
 .header{
     flex-direction:column;
     text-align:center;
@@ -617,6 +816,87 @@ footer hr{
     padding:50px 20px;
 }
 
+}
+@media screen and (max-width: 375px) {
+
+    .header{
+        padding:10px;
+    }
+
+    .title h1{
+        font-size:22px;
+    }
+
+    .navbar{
+        width:100%;
+    }
+
+    .navbar a{
+        font-size:14px;
+        padding:12px;
+    }
+
+    .hero{
+        padding:100px 10px 30px;
+        height:auto;
+    }
+    .hero-content{
+        flex-direction:column;
+        padding:10px;
+    }
+
+    .login-box{
+        width:95%;
+        max-width:100%;
+        height:auto;
+        padding:18px;
+        margin:20px auto;
+    }
+    .login-box h3{
+        font-size:14px;
+    }
+
+    .route-row{
+        flex-direction:column;
+        gap:12px;
+    }
+
+    #date,
+    .field select,
+    .login-box button{
+        width:100%;
+    }
+
+    .hero-text h1{
+        font-size:30px;
+    }
+
+    .hero-text h2{
+        font-size:18px;
+    }
+     .hero-text h3{
+        font-size:5px;
+    }
+
+
+    .hero-text p{
+        font-size:15px;
+    }
+
+    .services,
+    .about,
+    .stats{
+        padding:30px 15px;
+    }
+
+    .card{
+        width:100%;
+    }
+
+    .footer-container{
+        flex-direction:column;
+        text-align:center;
+    }
 }
 
 @media(max-width:600px){
@@ -1032,4 +1312,47 @@ html {
 .confirm99-btn:hover{
     background:#ff7b00;
     transform:translateY(-3px);
+}
+#snackbar {
+    visibility: hidden;
+    min-width: 280px;
+    background-color: #28a745;
+    color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    padding: 16px;
+    position: fixed;
+    z-index: 9999;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+    font-size: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,.3);
+}
+
+#snackbar.show {
+    visibility: visible;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
 }

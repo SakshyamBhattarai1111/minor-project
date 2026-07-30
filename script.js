@@ -8,59 +8,87 @@ function login() {
     var password = document.getElementById("password").value;
 
     if (username == "" || password == "") {
-        alert("Please enter username and password.");
+        showSnackbar("⚠️ Please enter username and password.");
         return false;
     }
 
     if (username == "admin" && password == "1234") {
-        alert("Welcome, " + username);
-        window.location = "user.html";
-    }
-    else {
-        alert("Login Successful");
+
+        showSnackbar("✅ Welcome, " + username);
+
+        setTimeout(function () {
+            window.location = "user.html";
+        }, 2000);
+
+    } else {
+
+        showSnackbar("✅ Login Successful");
+
+        setTimeout(function () {
+            window.location = "user.html";
+        }, 2000);
     }
 
     return false;
 }
-function search(){
-var date = document.getElementById("date").value;
-var from= document.getElementById("from").value;
-var to = document.getElementById("to").value;
-if(date=="" || from=="" || to==""){
-    alert("Please fill all the fields");
-  
-}
-    else if(from==to){
-        alert("From and To locations cannot be same");
+
+function search() {
+
+    var date = document.getElementById("date").value;
+    var from = document.getElementById("from").value;
+    var to = document.getElementById("to").value;
+
+    if (date == "" || from == "" || to == "") {
+        showSnackbar("⚠️ Please fill all the fields.");
+        return false;
     }
-    if (to=="Kathmandu" || from=="Pokhara" || to=="Pokhara" || from=="Kathmandu"){
-        alert("Search Successful");
-       window.location = "routes.html";
+
+    if (from == to) {
+        showSnackbar("⚠️ From and To locations cannot be the same.");
+        return false;
     }
+
+    showSnackbar("🔍 Search Successful!");
+
+    setTimeout(function () {
+        window.location = "routes.html";
+    }, 2000);
+
+    return false;
 }
-function search1(){
-alert("Please login first to search for routes");
+
+function search1() {
+    showSnackbar("🔒 Please login first to search for routes.");
+    return false;
 }
+
 function signUp() {
+
     var username = document.getElementById("username").value;
     var password = document.getElementById("password").value;
     var confirmPassword = document.getElementById("confirmPassword").value;
 
     if (username == "" || password == "" || confirmPassword == "") {
-        alert("Please fill all the fields.");
+        showSnackbar("⚠️ Please fill all the fields.");
         return false;
     }
 
     if (password != confirmPassword) {
-        alert("Passwords do not match.");
+        showSnackbar("❌ Passwords do not match.");
         return false;
     }
 
-    alert("Sign Up Successful");
-    window.location = "login.html";
+    showSnackbar("✅ Account Created Successfully!");
+
+    setTimeout(function () {
+        window.location = "login.html";
+    }, 2000);
+
     return false;
 }
+
 function toggleTheme() {
+
     document.body.classList.toggle("dark");
 
     const btn = document.getElementById("theme-btn");
@@ -71,19 +99,70 @@ function toggleTheme() {
         btn.innerHTML = "🌙";
     }
 }
-function bookticket(){
-    window.location = "booking.html";
+
+function showSnackbar(message) {
+
+    let x = document.getElementById("snackbar");
+
+    x.innerHTML = message;
+    x.classList.add("show");
+
+    setTimeout(function () {
+        x.classList.remove("show");
+    }, 3000);
 }
-function booking78(){
-    var name = document.getElementById("name").value;
-    var phone = document.getElementById("phone").value;
-    if(name=="" || phone==""){
-        alert("Please fill all the fields");
-        return false;
+
+window.onload = function () {
+
+    const dateInput = document.getElementById("date");
+
+    if (dateInput) {
+        const today = new Date().toISOString().split("T")[0];
+        dateInput.min = today;
     }
-    else {
-        alert("Booking Confirmed!");
-        window.location = "confirmation.html";
-        return false;
+
+};
+function filterRoutes() {
+
+    let from = document.getElementById("from").value;
+    let to = document.getElementById("to").value;
+
+    let routes = document.querySelectorAll(".route-card");
+    let found = false;
+
+    routes.forEach(function(route){
+
+        let city = route.querySelector(".route-city");
+
+        let routeFrom = city.dataset.from;
+        let routeTo = city.dataset.to;
+
+        if(routeFrom === from && routeTo === to){
+            route.style.display = "block";
+            found = true;
+        }else{
+            route.style.display = "none";
+        }
+
+    });
+
+    if(!found){
+        showSnackbar("❌ No routes found!");
     }
+
+    return false;
+}
+function booking78() {
+
+    showSnackbar("✅ Booking Confirmed!");
+
+    setTimeout(function () {
+        window.location.href = "confirmation.html";
+    }, 3000);
+
+    return false;
+}
+
+function toggleMenu() {
+    document.getElementById("navbar").classList.toggle("active");
 }

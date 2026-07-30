@@ -39,43 +39,40 @@
 <h1 class="route-title">Available Bus Routes</h1>
 <p class="route-subtitle">Book your journey across Nepal.</p>
 
-<div class="route-search">
+<form onsubmit="filterRoutes(); return false;">
 
-    <div>
-        <label>Date</label><br>
-        <input type="date">
+    <div class="route-search">
+
+        <div>
+            <label>From</label><br>
+            <select id="from">
+           <option value="Kathmandu">Kathmandu</option>
+    <option value="Pokhara">Pokhara</option>
+    <option value="Chitwan">Chitwan</option>
+            </select>
+        </div>
+
+        <div>
+            <label>To</label><br>
+            <select id="to">
+                <<option value="Pokhara">Pokhara</option>
+    <option value="Kathmandu">Kathmandu</option>
+    <option value="Chitwan">Chitwan</option>
+            </select>
+        </div>
+
+        <button type="submit">Search</button>
+
     </div>
 
-    <div>
-        <label>From</label><br>
-        <select>
-            <option>Kathmandu</option>
-            <option>Pokhara</option>
-            <option>Butwal</option>
-            <option>Biratnagar</option>
-            <option>Chitwan</option>
-        </select>
-    </div>
-
-    <div>
-        <label>To</label><br>
-        <select>
-            <option>Pokhara</option>
-            <option>Butwal</option>
-            <option>Biratnagar</option>
-            <option>Chitwan</option>
-            <option>Kathmandu</option>
-        </select>
-    </div>
-
-    <button>Search</button>
-
+</form>
+ 
 </div>
-
+<h2 style="text-align: center;color:rgb(54, 54, 3)">Popular Routes</h2>
 <div class="route-card">
     <div class="route-info">
 
-        <div class="route-city">Kathmandu ➜ Chitwan</div>
+        <div class="route-city" data-from="Kathmandu" data-to="Chitwan">Kathmandu ➜ Chitwan</div>
 
         <div class="route-detail">
             <h4>Departure</h4>
@@ -102,7 +99,7 @@
 <div class="route-card">
     <div class="route-info">
 
-        <div class="route-city">Kathmandu ➜ Pokhara</div>
+        <div class="route-city"data-from="Kathmandu" data-to="Pokhara">Kathmandu ➜ Pokhara</div>
 
         <div class="route-detail">
             <h4>Departure</h4>
@@ -125,11 +122,13 @@
         </div>
 
     </div>
+   
 </div>
+
 <div class="route-card">
     <div class="route-info">
 
-        <div class="route-city">Kathmandu ➜ Butwal</div>
+        <div class="route-city"data-from="Chitwan" data-to="Butwal">Kathmandu ➜ Butwal</div>
 
         <div class="route-detail">
             <h4>Departure</h4>
@@ -214,7 +213,7 @@
 
 </footer>
 
-
+<div id="snackbar"></div>
 
 </body>
 </html>

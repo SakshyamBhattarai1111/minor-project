@@ -24,22 +24,23 @@
     </div>
 
 
+<div class="menu-toggle" onclick="toggleMenu()">
+    ☰
+</div>
 
-<nav class="navbar">
-    <a href="main.html" class="active">Home</a>
+<nav class="navbar" id="navbar">
+    <a href="#home" class="active">Home</a>
     <a href="#about">About</a>
     <a href="routes.html">Routes</a>
     <a href="booking.html">Book Ticket</a>
     <a href="#contact">Contact</a>
     <a href="login.html" class="login-btn">Login</a>
-
-    <button id="theme-btn" onclick="toggleTheme()">🌙</button>
-</nav>
+     <button id="theme-btn" onclick="toggleTheme()">🌙</button>
 </nav>
 </header>
 <section class="hero">
 
-    <video autoplay muted loop playsinline>
+    <video  class="video-box" autoplay muted loop playsinline>
         <source src="bus.mp4" type="video/mp4">
     </video>
 
@@ -237,6 +238,6 @@
 </footer>
 
 
-
+<div id="snackbar"></div>
 </body>
 </html>

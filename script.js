@@ -171,7 +171,7 @@ function contactForm() {
     showSnackbar("✅ Message Sent Successfully!");
 
     setTimeout(function () {
-        window.location.href = "main.html";
+        window.location.href = "index.html";
     }, 2500);
 
     return false;

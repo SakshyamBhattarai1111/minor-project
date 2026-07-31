@@ -166,3 +166,13 @@ function booking78() {
 function toggleMenu() {
     document.getElementById("navbar").classList.toggle("active");
 }
+function contactForm() {
+
+    showSnackbar("✅ Message Sent Successfully!");
+
+    setTimeout(function () {
+        window.location.href = "main.html";
+    }, 2500);
+
+    return false;
+}
